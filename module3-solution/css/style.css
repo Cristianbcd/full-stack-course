@@ -1,0 +1,76 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #eceadf;
+}
+#header-nav {
+  background-color: #424a54;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+}
+.navbar-brand h1 {
+  color: #eceadf;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  vertical-align: middle;
+}
+#nav-list {
+  margin-top: 20px;
+  color: #dad5cd;
+  text-align: center;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #e37262;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -45px;
+}
+.customHr {
+    width: 95%
+    font-size: 1px;
+    color: rgba(0, 0, 0, 0);
+    line-height: 2px;
+    background-color: #eceadf;
+    margin-top: -0px;
+    margin-bottom: 20px;
+}
+.container-fluid h2 {
+  color: #424a54;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.food {
+  color: #424a54;
+  margin-top: 0;
+  text-align: center;
+  background-color: #dad5cd;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container-fluid .col-md-12 p {
+  color: #424a54;
+  background-color: #dad5cd;
+  margin-right: 20px;
+  margin-left: 20px;
+}
