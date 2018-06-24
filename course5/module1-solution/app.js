@@ -13,14 +13,14 @@
 			var arrayListOfFood = $scope.listOfFood.split(',');
 			console.log(arrayListOfFood.length);
 			console.log(arrayListOfFood.length);
-			if(arrayListOfFood.length == 1 && arrayListOfFood[0] != ""){
+			if(arrayListOfFood.length == 1 && arrayListOfFood[0] == ""){
+				$scope.message = "Please enter data first";
+			} else {
 				if(arrayListOfFood.length <= 3){
 					$scope.message = "Enjoy!";
 				} else {
 					$scope.message = "Too much!";
 				}
-			} else {
-				$scope.message = "Please enter data first";
 			}
 		}
 	}
