@@ -42,15 +42,17 @@
 
   function NarrowItDownController(MenuSearchService) {
     var narrowItDownController = this;
+    narrowItDownController.found = [];
     narrowItDownController.searchTerm = "";
     narrowItDownController.search = function () {
-      narrowItDownController.found = [];
-      var promise = MenuSearchService.getMatchedMenuItems(narrowItDownController.searchTerm);
-      promise.then(function (response) {
-        narrowItDownController.found = response;
-      }).catch(function (error) {
-        console.log("Something went wrong.");
-      });
+      if(narrowItDownController.searchTerm != "") {
+        var promise = MenuSearchService.getMatchedMenuItems(narrowItDownController.searchTerm);
+        promise.then(function (response) {
+          narrowItDownController.found = response;
+        }).catch(function (error) {
+          console.log("Something went wrong.");
+        });
+      }
     }
 
     narrowItDownController.removeItem = function (index) {

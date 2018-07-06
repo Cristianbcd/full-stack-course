@@ -1,5 +1,7 @@
-<div class="container" >
-  <table style="width:100%">
+
+<h2>Result</h2>
+<div ng-if="list.items.length == 0">Nothing found!</div>
+  <table style="width:100%" ng-if="list.items.length != 0">
     <tr>
       <th>Name</th>
       <th>Short Name</th>
@@ -13,10 +15,3 @@
       <th><button ng-click="list.onRemove({index: $index});">Don't want this one!</button></th>
     </tr>
   </table>
-  <!-- <ol>
-    <li ng-repeat="item in list.items">
-      {{item.name}} {{item.short_name}} {{ item.description }}
-      <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
-    </li>
-  </ol> -->
-</div>
