@@ -42,9 +42,9 @@
 
   function NarrowItDownController(MenuSearchService) {
     var narrowItDownController = this;
-    narrowItDownController.found = [];
     narrowItDownController.searchTerm = "";
     narrowItDownController.search = function () {
+      narrowItDownController.found = [];
       if(narrowItDownController.searchTerm != "") {
         var promise = MenuSearchService.getMatchedMenuItems(narrowItDownController.searchTerm);
         promise.then(function (response) {
