@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html ng-app="MenuApp">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <title></title>
   </head>
-  <body>
+  <body class="backgroud">
+    <div class="welcome">
+      <h1>Welcome to our Restaurant</h1>
+    </div>
+    <ui-view></ui-view>
+
     <!-- Libraries -->
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
 
     <!-- Modules -->
     <script type="text/javascript" src="src/menuapp.module.js"></script>
+
+    <!-- Routes -->
+    <script type="text/javascript" src="src/routes.js"></script>
+
+    <!-- Artifacts -->
+    <script type="text/javascript" src="src/data.module.js"></script>
+    <script type="text/javascript" src="src/mainlist.controller.js"></script>
+    <script type="text/javascript" src="src/items.controller.js"></script>
+    <script type="text/javascript" src="src/menudata.service.js"></script>
   </body>
 </html>

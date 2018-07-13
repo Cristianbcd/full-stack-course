@@ -1,0 +1,31 @@
+.backgroud {
+  background-color: #DEEEF3;
+}
+.welcome {
+  color: #2A3132;
+  text-align: center;
+  text-decoration-color: #2A3132;
+}
+.buttons {
+  color: #2A3132;
+  text-align: left;
+  text-decoration-color: #2A3132;
+}
+.simulatedButton {
+  background-color: #336B87;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.mouse:hover {
+  display: inline-block;
+  cursor: pointer;
+  background-color: yellow;
+}
+
+h3{
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}

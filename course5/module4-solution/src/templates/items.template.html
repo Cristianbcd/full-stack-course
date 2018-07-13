@@ -1,0 +1,13 @@
+<div class="buttons">
+  <a class="simulatedButton" ui-sref="home">Home</a>
+  <a class="simulatedButton" ui-sref="categories"> Categories</a>
+</div>
+
+<h2>{{itemDetail.items.category.name}}</h2>
+<h3>{{itemDetail.items.category.special_instructions}}</h3>
+<ul>
+  <li  ng-repeat="item in itemDetail.items.menu_items">
+    <h2>{{item.name}}</h2>
+    <h3>Price: ${{item.price_large}}</h3>
+    <h4>{{item.description}}</h4></li>
+</ul>
