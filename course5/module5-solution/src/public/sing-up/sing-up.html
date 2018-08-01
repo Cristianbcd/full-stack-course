@@ -1,1 +1,25 @@
-<h2>Hola Si Funciona</h2>
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">
+    Sign up for the newsletter
+  </h2>
+  <fieldset>
+    <legend id="registration">Registration</legend>
+    <form name='regForm' novalidate>
+      <input
+      class="input-from-user"
+      type="text"
+      name="firstname"
+      placeholder="First Name"
+      ng-model="reg.user.firstname"
+      required
+      minlength="5"
+      ng-maxlength="20">
+      <span
+      ng-if="(regForm.firstname.$error.minlength
+      || regForm.firstname.$error.required)
+      && regForm.firstname.$touched">
+      First name must be at least 5 characters long
+    </span>
+    </form>
+  </fieldset>
+</div>

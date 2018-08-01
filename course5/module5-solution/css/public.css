@@ -3,7 +3,19 @@
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
 }
-
+#registration {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-size: 1.6em;
+  color: #fff;
+}
+.input-from-user {
+  width: 100%;
+  border: 2px solid #557c3e;
+  border-radius: 4px;
+  color: #3F0C1F;
+}
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
