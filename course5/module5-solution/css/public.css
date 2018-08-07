@@ -112,6 +112,108 @@ h3.menu-item-title {
   font-style: italic;
 }
 /* END SINGLE CATEGORY PAGE */
+/* SIGNUP PAGE */
+#signupform {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30px;
+  color: #951C49;
+}
+#signupform h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#signupform h4 {
+  margin: 10px 0 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#signupform input[type="text"],
+#signupform input[type="email"],
+#signupform input[type="tel"],
+#signupform input[type="url"],
+#signupform textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+#signupform input[type="text"]:hover,
+#signupform input[type="email"]:hover,
+#signupform input[type="tel"]:hover,
+#signupform input[type="url"]:hover,
+#signupform textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+#signupform textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#signupform button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #557c3e;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+#signupform button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+#signupform button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+/* END SIGNUP PAGE */
+
+/* MYINFO PAGE */
+#myInfo {
+  font-size: 20px;
+}
+.myinfo-dish {
+  width: 100%;
+  float:none;
+  overflow: hidden;
+}
+/* MYINFO PAGE */
 
 
 /********** Large devices only **********/

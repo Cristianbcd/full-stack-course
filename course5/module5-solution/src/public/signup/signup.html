@@ -1,0 +1,94 @@
+<div class="container">
+	<form id="signupform" name="signupForm" novalidate>
+		<h3>Sign Up</h3>
+		<h4>Subscribe for our newsletter</h4>
+	<div>
+		<label>
+			First Name
+		</label>
+		<input 
+		type="text" 
+		name="firstName"
+		placeholder="First Name"
+		ng-model="signupCtrl.user.firstName"
+		required>
+		<span 
+		ng-if="
+		signupForm.firstName.$error.required &&
+		signupForm.firstName.$touched">First name is required</span>
+	</div>
+
+	<div>
+		<label>
+			Last Name
+		</label>
+		<input 
+		type="text" 
+		name="lastName"
+		placeholder="Last Name"
+		ng-model="signupCtrl.user.lastName"
+		required>
+		<span 
+		ng-if="
+		signupForm.lastName.$error.required &&
+		signupForm.lastName.$touched">Last name is required</span>
+	</div>
+
+	<div>
+		<label>
+			Email
+		</label>
+		<input 
+		type="email" 
+		name="email"
+		placeholder="Email"
+		ng-model="signupCtrl.user.email"
+		required>
+		<span 
+		ng-if="
+		signupForm.email.$error.$invalid &&
+		signupForm.email.$touched">Valid Email is required</span>
+	</div>
+
+	<div>
+		<label>
+			Phone
+		</label>
+		<input 
+		type="tel" 
+		name="phone"
+		placeholder="Phone"
+		ng-model="signupCtrl.user.phone"
+		required>
+		<span 
+		ng-if="
+		signupForm.phone.$error.required &&
+		signupForm.phone.$touched">Valid Phone is required</span>
+	</div>
+
+	<div>
+		<label>
+			Favorite Dish
+		</label>
+		<input 
+		type="text" 
+		name="favoriteDish"
+		placeholder="Favorite Dish Short Code"
+		ng-model="signupCtrl.user.favoriteDish"
+		required>
+		<span 
+		ng-if="!signupCtrl.validShortCode && signupForm.phone.$touched">No such menu number exists Example: L16</span>
+	</div>
+
+	<div>
+		<h3 ng-if="signupCtrl.user.saved">Your information has been saved!</h3>
+	</div>
+	<div>
+		<button
+		id="signupform-submit"
+		type="submit" 
+		ng-disabled="signupForm.$invalid"
+		ng-click="signupCtrl.setUserInfo()">Submit Info</button>
+	</div>
+</form>
+</div>

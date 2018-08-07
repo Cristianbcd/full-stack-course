@@ -1,0 +1,46 @@
+<div class="container">
+	<div id="signupform">
+		<h3>My Info</h3>
+		<div id="myInfo" ng-if="infoCtrl.userInfo.saved">
+			<label>
+				First Name
+			</label>
+			<h4>
+				{{infoCtrl.userInfo.firstName}}
+			</h4>
+			<label>
+				Last Name
+			</label>
+			<h4>
+				{{infoCtrl.userInfo.lastName}}
+			</h4>
+			<label>
+				Email
+			</label>
+			<h4>
+				{{infoCtrl.userInfo.email}}
+			</h4>
+			<label>
+				Phone
+			</label>
+			<h4>
+				{{infoCtrl.userInfo.phone}}
+			</h4>
+			<label>
+				Favorite Dish
+			</label>
+			<div class="myinfo-dish">
+				<menu-item menu-item="infoCtrl.userInfo.MenuItem"></menu-item>
+			</div>
+		</div>
+
+		<div class="myinfo-alert">
+			<div 
+			class="alert alert-warning" 
+			ng-if="!infoCtrl.userInfo.saved">
+				<h2>Not Signed Up Yet.</h2>
+				<button type="submit" ui-sref="public.signup" id="signupform-submit">Sign up Now!</button>
+  </div>
+</div>
+	</div>
+</div>
